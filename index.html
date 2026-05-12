@@ -80,6 +80,7 @@
   font-family: 'Bricolage Grotesque', sans-serif;
 }
 
+
 @keyframes shine {
   100% {
     left: 125%;
@@ -95,7 +96,7 @@
   <div class="animate-glow fixed left-20 top-28 -z-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
   <div class="animate-glow fixed bottom-20 right-20 -z-10 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl"></div>
 
-  <header id="navbar"
+   <header id="navbar"
   class="fixed left-1/2 top-5 z-50 mx-auto flex w-[90%] max-w-6xl -translate-x-1/2 items-center justify-between rounded-3xl border border-white/15 bg-white/10 px-8 py-4 shadow-2xl backdrop-blur-xl transition-all duration-300 ease-out">
     <div class="text-2xl font-bold tracking-wide lb-logo">Lovebyte Games</div>
 
@@ -111,7 +112,8 @@
            </span>
           </div></a>|
           <a href="nod.html" class="transition duration-300 hover:scale-110 hover:text-white">Night over Day</a>|
-      <a href="#donate" class="transition duration-300 hover:scale-110 hover:text-white">Donate</a>
+          <a href="wishlist.html" class="transition duration-300 hover:scale-110 hover:text-purple-500">Wishlist</a>|
+      <a href="#donate" class="transition duration-300 hover:scale-110 hover:text-purple-500">Donate</a>
     </nav>
   </header>
 
@@ -268,6 +270,16 @@
     } else {
       navbar.classList.remove("-translate-y-[140%]", "opacity-0");
     }
+  });
+</script>
+
+
+<script>
+  const btn = document.querySelector("button");
+  const menu = document.getElementById("mobileMenu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
   });
 </script>
 
